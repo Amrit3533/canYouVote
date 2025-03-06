@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Voting Eligibility Checker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Check your Voting Eligibility</h1>
+      <label for="name">Enter your name</label>
+      <br />
+      <input type="text" id="name" required />
+      <br />
+      <label for="age">Enter your Age</label>
+      <br />
+      <input type="text" id="age" required/>
+      <br />
+      <button type="button" class="button" onclick="checkEligibility()">
+        Submit
+      </button>
+      <div id="result"></div>
+      <img src="./images/eligibility.webp" id="image_result" />
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
