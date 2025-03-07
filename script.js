@@ -6,7 +6,7 @@ let nameInput = document.getElementById("name");
 function checkEligibility() {
   let age = ageInput.value.trim();
   let userName = nameInput.value.trim();
-  if (isNaN(age) || age === "") {
+  if (isNaN(age) || age === "" || age <= 0) {
     result.innerHTML = "<h3>Please enter a valid number for age.</h3>";
     image.src = "./images/error.avif";
     return;
